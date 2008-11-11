@@ -1,17 +1,34 @@
 syntax on
 syntax enable
+filetype on
 filetype plugin on
 filetype indent on
 ""colorscheme evening
+runtime macros/matchit.vim
+set backupdir=~/.vim-tmp
+set directory=~/.vim-tmp
+set scrolloff=3
+set hidden
+set history=1000
+set wildmenu
+set wildmode=list:longest
+set ignorecase
+set smartcase
+set incsearch
+set title
 set nocompatible
 set number
 set ruler
 set nowrap
 set autoindent
 set smartindent
+set showmatch
 set si
 set et
 set smarttab
+set expandtab
+set mousehide
+set guioptions=a
 set shiftwidth=4
 set hidden
 set showbreak=>
@@ -24,6 +41,7 @@ set foldtext=v:foldstart
 let c_gnu=1
 let c_no_bracket_error=1
 let objc_syntax_for_h=1
+""let loaded_matchparen = 1  
 syntax enable
 
 au BufNewFile,BufRead *.aml     setf html
