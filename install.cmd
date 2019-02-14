@@ -3,8 +3,10 @@
 :: Install neovim configuration.
 ::
 mkdir %LOCALAPPDATA%\nvim 
-mklink /J %LOCALAPPDATA%\nvim\init.vim nvim\init.vim
-mklink /J %LOCALAPPDATA%\nvim\ginit.vim nvim\ginit.vim
+mklink /H %LOCALAPPDATA%\nvim nvim
+
+mklink /H %USERPROFILE%\_vimrc nvim\init.vim
+mklink /J %USERPROFILE%\vimfiles nvim
 
 :: Install git configuration.
 ::
