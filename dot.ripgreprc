@@ -1,0 +1,10 @@
+# Add my 'xe' type.
+--type-add
+xe:*.xe
+
+# Add my 'cmd' type.
+--type-add
+cmd:*.cmd
+
+# Because who cares about case!?
+--smart-case
