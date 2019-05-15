@@ -22,7 +22,7 @@ set matchtime=1
 set gdefault
 set smartcase
 set ignorecase
-
+set clipboard+=unnamedplus
 " Notes setting
 "
 let g:vimwiki_map_prefix = '<Leader>vw'
@@ -50,6 +50,12 @@ elseif $COMPUTERNAME == "BJG"
   let g:vimwiki_path = 'F:\notes\'
 endif
 
+if exists('+termguicolors')
+"  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 if has('gui_running')
   set guifont=UbuntuMono\ NF:h12
   if has('nvim')
@@ -69,6 +75,10 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'joshdick/onedark.vim'
  Plug 'KeitaNakamura/neodark.vim'
  Plug 'sonph/onehalf', {'rtp': 'vim/'}
+ Plug 'chriskempson/base16-vim'
+ Plug 'wmvanvliet/vim-blackboard'
+ Plug 'rakr/vim-one'
+ Plug 'NLKNguyen/papercolor-theme'
 
  " Extensions
  "
@@ -92,10 +102,13 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'rhysd/committia.vim'
  Plug 'wahidrahim/resize-font'
  Plug 'vim-scripts/zoom.vim'
- Plug 'sonph/onehalf', {'rtp': 'vim/'}
+ Plug 'jreybert/vimagit'
+ Plug 'PProvost/vim-ps1'
+ Plug 'yegappan/greplace'
+ Plug 'rhysd/git-messenger.vim'
 call plug#end()
 
-"set background=dark
+set background=dark
 "let g:airline_theme='challenger_deep'
 "let g:airline_theme='twofirewatch'
 "let g:airline_theme='ayu'
@@ -113,7 +126,7 @@ let g:airline#extensions#whitespace#checks = [ ]
 "colorscheme onedark
 
 let g:airline_theme='neodark'
-"let g:neodark#terminal_transparent = 1
+let g:neodark#terminal_transparent = 1
 let g:neodark#use_256coor = 1
 let g:neodark#background = '#1E1F29'
 colorscheme neodark
