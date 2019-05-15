@@ -51,10 +51,9 @@ elseif $COMPUTERNAME == "BJG"
 endif
 
 if has('gui_running')
+  set guifont=UbuntuMono\ NF:h12
   if has('nvim')
-    set guifont=UbuntuMono NF:h12
   else
-    set guifont=Consolas:h12
   endif
 endif
 
@@ -69,6 +68,7 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'ayu-theme/ayu-vim' 
  Plug 'joshdick/onedark.vim'
  Plug 'KeitaNakamura/neodark.vim'
+ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
  " Extensions
  "
@@ -92,6 +92,7 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'rhysd/committia.vim'
  Plug 'wahidrahim/resize-font'
  Plug 'vim-scripts/zoom.vim'
+ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 call plug#end()
 
 "set background=dark
