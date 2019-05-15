@@ -1,29 +1,64 @@
 [user]
 	name = Brian Gianforcaro
 	email = b.gianfo@gmail.com
+
 [alias]
-        co = checkout
-        ci = commit -a
+    co = checkout
+    ci = commit -a
  
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-      
+    status=auto
+    branch=auto
+    interactive=auto
+    diff=auto
+    ui = auto
+
 [color "branch"]
-        current = yellow reverse
-        local = yellow
-        remote = green
-       
+    current = yellow reverse
+    local = yellow
+    remote = green
+   
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red bold
-        new = green bold
-        
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    
 [color "status"]
-        added = yellow
-        changed = green
-        untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
+
 [github]
 	user = realrbman
+
+[push]
+	default = current
+
+[pull]
+	rebase = true
+
+[log]
+	decorate = short
+	follow = true
+
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	pr = "!f() { exec vsts code pr \"$@\"; }; f"
+	repo = "!f() { exec vsts code repo \"$@\"; }; f"
+
+[remote "origin"]
+	prune = true
+
+[fetch]
+    prune = true
+	showForcedUpdates = true
+
+[gc]
+	auto = 256
+
+[pager]
+    log = off
+
+[rebase]
+	autoStash = true
