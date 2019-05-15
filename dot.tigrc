@@ -1,0 +1,34 @@
+# vim: set expandtab sw=4 tabstop=4:
+# *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
+
+
+color "Reported-by:"  162 default
+
+bind generic <Ctrl-F> !?git checkout %(commit)
+
+set blame-view = \
+       date:default \
+       author:abbreviated \
+       id:yes,color \
+       line-number:yes,interval=1 text
+
+# Use Git's default (reverse chronological) order, never automatically
+# use topo-order for the commit graph
+set commit-order = default
+
+# Limit number of commits loaded by default to 1000
+set main-options = -n 1000
+
+# Don't show staged and unstaged changes in the main view
+set show-changes = no
+
+set tab-size = 4
+
+set mouse = yes
+set mailmap = yes
+
+# Shortcut to drop a stash.
+bind stash D !?git stash drop %(stash)
+
+# Shortcut to drop a ref
+bind ref d @git branch -D %(ref)
