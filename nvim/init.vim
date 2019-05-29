@@ -22,7 +22,7 @@ set matchtime=1
 set gdefault
 set smartcase
 set ignorecase
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 " Notes setting
 "
 let g:vimwiki_map_prefix = '<Leader>vw'
