@@ -106,6 +106,7 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'PProvost/vim-ps1'
  Plug 'yegappan/greplace'
  Plug 'rhysd/git-messenger.vim'
+ Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 set background=dark
