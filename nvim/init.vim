@@ -74,14 +74,23 @@ call plug#begin('C:\tools\vim-plugged')
  " Plug 'vim-scripts/Color-Scheme-Explorer'
  " Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
  " Plug 'flazz/vim-colorschemes'
- Plug 'ayu-theme/ayu-vim' 
- Plug 'joshdick/onedark.vim'
- Plug 'KeitaNakamura/neodark.vim'
- Plug 'sonph/onehalf', {'rtp': 'vim/'}
- Plug 'chriskempson/base16-vim'
- Plug 'wmvanvliet/vim-blackboard'
+ " Plug 'ayu-theme/ayu-vim' 
+ " Plug 'joshdick/onedark.vim'
+ " Plug 'KeitaNakamura/neodark.vim'
+ " Plug 'sonph/onehalf', {'rtp': 'vim/'}
+ " Plug 'chriskempson/base16-vim'
+ " Plug 'wmvanvliet/vim-blackboard'
  Plug 'rakr/vim-one'
  Plug 'NLKNguyen/papercolor-theme'
+ " Plug 'jaredgorski/spacecamp'
+ " Plug 'Rigellute/shades-of-purple.vim'
+ " Plug 'gruvbox-community/gruvbox'
+ " Plug 'danilo-augusto/vim-afterglow'
+ " Plug 'jdsimcoe/abstract.vim'
+ " Plug 'andreasvc/vim-256noir'
+ " Plug 'mhartington/oceanic-next'
+ " Plug 'rakr/vim-colors-rakr'
+ " Plug 'cseelus/vim-colors-lucid'
 
  " Extensions
  "
@@ -110,9 +119,22 @@ call plug#begin('C:\tools\vim-plugged')
  Plug 'yegappan/greplace'
  Plug 'rhysd/git-messenger.vim'
  Plug 'editorconfig/editorconfig-vim'
+ Plug 'jremmen/vim-ripgrep'
+ Plug 'stefandtw/quickfix-reflector.vim'
+ Plug 'bfrg/vim-cpp-modern'
+ Plug 'Yggdroot/indentLine'
+
 call plug#end()
 
-set background=dark
+"set background=dark
+"let g:gruvbox_italicize_comments = 0
+"let g:gruvbox_contrast_dark = 'soft'
+"let g:gruvbox_contrast_light = 'soft'
+"let g:airline_theme='gruvbox'
+"colorscheme gruvbox
+
+"set background=dark
+"set background=light
 "let g:airline_theme='challenger_deep'
 "let g:airline_theme='twofirewatch'
 "let g:airline_theme='ayu'
@@ -122,18 +144,41 @@ let g:airline#extensions#whitespace#checks = [ ]
 
 "let ayucolor='dark'  " for dark version of theme
 "let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="light"  " for light version of theme
-"let g:airline_theme='ayu_mirage'
+let ayucolor="light"  " for light version of theme
+"let g:airline_theme='ayu_light'
 "colorscheme ayu
 
 "let g:airline_theme='onedark'
 "colorscheme onedark
 
-let g:airline_theme='neodark'
-let g:neodark#terminal_transparent = 1
-let g:neodark#use_256coor = 1
-let g:neodark#background = '#1E1F29'
-colorscheme neodark
+"let g:airline_theme='neodark'
+"let g:neodark#terminal_transparent = 1
+"let g:neodark#use_256coor = 1
+"let g:neodark#background = '#1E1F29'
+"colorscheme neodark
+"
+
+"let g:cpp_simple_highlight = 1
+"let g:cpp_named_requirements_highlight = 1
+
+"let g:PaperColor_Theme_Options = {
+"  \   'language': {
+"  \     'python': {
+"  \       'highlight_builtins' : 1
+"  \     },
+"  \     'cpp': {
+"  \       'highlight_standard_library': 1
+"  \     },
+"  \     'c': {
+"  \       'highlight_builtins' : 1
+"  \     }
+"  \   }
+"  \ }
+"
+"set background=light
+"colorscheme papercolor
+
+colorscheme one
 
 map \ev :edit $MYVIMRC<CR>
 map \sv :so $MYVIMRC<CR>
