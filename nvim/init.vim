@@ -1,5 +1,5 @@
 
-" Setup basic settings.
+"" Setup basic settings.
 filetype plugin on
 set number
 set nowrap
@@ -22,6 +22,9 @@ set matchtime=1
 set gdefault
 set smartcase
 set ignorecase
+set list
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+
 " set clipboard+=unnamedplus
 " Notes setting
 "
