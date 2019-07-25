@@ -1,2 +1,3 @@
 nvim/autoload/plug.vim.old
 scoop
+nvim/plugged

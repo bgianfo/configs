@@ -67,7 +67,7 @@ if has('gui_running')
 endif
 
 " Bootstrap Plug
-call plug#begin('C:\tools\vim-plugged')
+call plug#begin()
  
  " Themes 
  "
